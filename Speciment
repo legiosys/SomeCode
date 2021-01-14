@@ -1,0 +1,6 @@
+if (_ignoreNullableTypeEquality &&
+                    parameter.Member.DeclaringType == typeof(TValueType) &&
+                    parameter.Member.MemberType == MemberTypes.Constructor &&
+                    parameter.ParameterType == Nullable.GetUnderlyingType(typeof(TValueType)))
+                    return _value;
+                    
